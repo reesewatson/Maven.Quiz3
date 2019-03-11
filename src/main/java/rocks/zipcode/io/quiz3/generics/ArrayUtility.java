@@ -12,15 +12,28 @@ public class ArrayUtility<SomeType> {
         this.array = array;
     }
 
-    public SomeType findOddOccurringValue() {
-        return null;
+    public SomeType findOddOccurringValue(Integer[] intArray) {
+        for (int i = 0; i < intArray.length; i++) {
+        int oddValue = intArray[i] % 2 != 0;
+        if (intArray[i] == oddValue) {
+        return oddValue;}}
     }
 
-    public SomeType findEvenOccurringValue() {
-        return null;
+    public SomeType findEvenOccurringValue(Integer[] intArray) {
+        for (int i = 0; i < intArray.length; i++) {
+        int evenValue = intArray[i] % 2 == 0;
+        if (intArray[i] == evenValue) {
+        return evenValue;}}
     }
 
     public Integer getNumberOfOccurrences(SomeType valueToEvaluate) {
+//        public static Integer getNumberOfOccurrences(Object[] objectArray, Object objectToCount) {
+//        int count = 0;
+//        for (int i = 0; i < valueToEvaluate.length; i++) {
+//            if (valueToEvaluate[i].equals(objectToCount)) {
+//                count++;
+//            }
+//        }return count;
         return null;
     }
 
